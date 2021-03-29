@@ -6,6 +6,14 @@ public class myPhone {
 	String color = "Black";
 	int volume=10;
 	
+	void startCall() {
+		System.out.println("Hello how are you ?");
+	}
+	
+	void endCall() {
+		System.out.println("bye bye see u next time!");
+	}
+	
 	void printVol (int volume) {
 		System.out.println("The volume will become \t: "+volume);
 	}
@@ -18,5 +26,4 @@ public class myPhone {
 		volume--;
 		
 	}
-	
 }

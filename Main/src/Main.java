@@ -13,6 +13,8 @@ public class Main {
 		a.voldown();
 		a.voldown();
 		a.printVol(a.volume);
+		a.startCall();
+		a.endCall();
 		
 		System.out.println("***********************************************************");
 		
@@ -24,6 +26,8 @@ public class Main {
 		b.voldown();
 		b.voldown();
 		b.printVol(b.volume);
+		b.startCall();
+		b.endCall();
 		
 
 	}
@@ -36,6 +40,8 @@ public class Main {
 		System.out.println("Volume \t\t\t: "+volume);
 		
 	}
+	
+	
 	
 	 
 }
