@@ -11,7 +11,13 @@ public class Main {
 		myphone.price=399;
 		myphone.volume=10;
 		
-		printInfo(myphone);
+		System.out.print("Brand \t\t\t: ");
+		myphone.getbrand();
+		System.out.print("Price \t\t\t: ");
+		myphone.getprice();
+		System.out.print("Color \t\t\t: ");
+		myphone.getcolor();
+		System.out.println("The current volume \t: "+myphone.volume);
 		System.out.println("If press button (+) ");
 		myphone.volup();
 		System.out.println("The volume will become \t: "+myphone.volume);
@@ -27,7 +33,13 @@ public class Main {
 		benphone.price=499;
 		benphone.volume=40;
 		
-		printInfo(benphone);
+		System.out.print("Brand \t\t\t: ");
+		benphone.getbrand();
+		System.out.print("Price \t\t\t: ");
+		benphone.getprice();
+		System.out.print("Color \t\t\t: ");
+		benphone.getcolor();
+		System.out.println("The current volume \t: "+benphone.volume);
 		System.out.println("If press button (+) ");
 		benphone.volup();
 		System.out.println("The volume will become \t: "+benphone.volume);
@@ -39,16 +51,8 @@ public class Main {
 		
 
 	}
-	public static void printInfo(phone whosephone) {
-			
-		System.out.print("Brand \t\t\t: ");
-		whosephone.getbrand();
-		System.out.print("Price \t\t\t: ");
-		whosephone.getprice();
-		System.out.print("Color \t\t\t: ");
-		whosephone.getcolor();
-		System.out.println("The current volume \t: "+whosephone.volume);
-		
-	}
+
+
+
 
 }
