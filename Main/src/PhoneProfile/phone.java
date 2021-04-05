@@ -33,8 +33,8 @@ public class phone {
 			}else if(country.equals("Thailand")) {
 				output=price*7.58;
 				unit = "Baht";
-		}
-			System.out.printf("Price in %-14s : %.2f %s%n",country,output,unit);
+				}
+		System.out.printf("Price in %-14s : %.2f %s%n",country,output,unit);
 	}
 
 	// method calculate price to be paid per how many month

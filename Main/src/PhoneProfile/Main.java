@@ -3,11 +3,11 @@ package PhoneProfile;
 public class Main {
 
 	public static void main(String[] args) {
-		phone huawei = new phone();  //create new object from class phone name as huawei.
-		phone vivo = new phone();	//create second object from class phone name as vivo.
-		phone samsung = new phone(); //create third object from class phone name as samsung.
-		phone sony = new phone();	//create forth object from class phone name as sony.
-		phone asus = new phone();	//create fifth object from class phone name as asus.
+		phone huawei = new phone();    //create new object from class phone name as huawei.
+		phone vivo = new phone();	   //create second object from class phone name as vivo.
+		phone samsung = new phone();   //create third object from class phone name as samsung.
+		phone sony = new phone();	   //create forth object from class phone name as sony.
+		phone asus = new phone();	   //create fifth object from class phone name as asus.
 		
 		System.out.println("VIVO SPECIFICATION");	
 		vivo.printSpec("V10","RED",399,55.6,'Y');
