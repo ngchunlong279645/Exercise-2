@@ -47,8 +47,21 @@ public class phone {
 	void totalPrice(int price,int quantity) {
 		int total =price * quantity;
 		System.out.println("Total price of "+quantity+" phone  : RM "+total);
-		System.out.println("=====================================");
 	}
+	
+	void promotion(int quantity) {
+		if (quantity>= 5) {
+			System.out.println("***Congratulations, you get a free smart watch !!***");
+		}
+		else if (quantity< 5){
+			System.out.println("***Promotion! Buy 5 get 1 free smart watch !!***!");
+		}
+		else {
+			System.out.println("INVALID INPUT...");
+			};
+			System.out.println("=====================================");
+	}
+
 }// end class
 
 
