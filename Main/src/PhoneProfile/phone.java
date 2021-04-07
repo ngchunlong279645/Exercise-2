@@ -65,7 +65,10 @@ public class phone {
 		else {
 			System.out.println("INVALID INPUT...");
 			};
-			System.out.println("=====================================");
+		for(int i=0;i<50;i++) {
+			System.out.print("=");
+	}
+		System.out.println("");
 	}
 	
 
