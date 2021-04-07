@@ -21,21 +21,27 @@ public class phone {
 	void convert(int price,String country) {
 		double output=0;
 		String unit=null;
-			if(country.equals("USA")) {
-				output=price*0.24;
-				unit = "Dollar";
-			}else if(country.equals("Japan")) {
-				output=price*26.71;
-				unit = "Yen";
-			}else if(country.equals("China")) {
-				output=price*1.59;
-				unit = "RMB";
-			}else if(country.equals("Thailand")) {
-				output=price*7.58;
-				unit = "Baht";
-				}
+		switch(country) {
+		case "USA":
+			output=price*0.24;
+			unit = "Dollar";
+			break;
+		case "Japan":
+			output=price*26.71;
+			unit = "Yen";
+			break;
+		case "China":
+			output=price*1.59;
+			unit = "RMB";
+			break;
+		case "Thailand":
+			output=price*7.58;
+			unit = "Baht";
+			break;
+		}
 		System.out.printf("Price in %-14s : %.2f %s%n",country,output,unit);
 	}
+	
 
 	// method calculate price to be paid per how many month
 	void payment(int price,int month) {
@@ -61,6 +67,7 @@ public class phone {
 			};
 			System.out.println("=====================================");
 	}
+	
 
 }// end class
 
