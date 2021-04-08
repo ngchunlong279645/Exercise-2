@@ -10,13 +10,13 @@ public class Main {
 		Phone asus = new Phone();
 		
 		System.out.println("VIVO SPECIFICATION");	
-		//vivo.printSpec();
-		//vivo.convert();
-		//vivo.payment();
-		//vivo.totalPrice();	
+		vivo.printSpec();
+		vivo.convert();
+		vivo.payment();
+		vivo.totalPrice();	
 		vivo.promotion();
 		
-		/*System.out.println("HUAWEI SPECIFICATION");	
+		System.out.println("HUAWEI SPECIFICATION");	
 		huawei.printSpec();
 		huawei.convert();
 		huawei.payment();
@@ -42,7 +42,7 @@ public class Main {
 		asus.convert();
 		asus.payment();
 		asus.totalPrice();
-		asus.promotion();*/
+		asus.promotion();
 	}
 
 }
