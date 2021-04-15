@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Car {
 	Scanner scan =  new Scanner(System.in);
-	String name;
+	String model;
 	double price;
 	int numberOfSeat;
 	String engineType;
@@ -12,9 +12,9 @@ public class Car {
 	double totalPrice;
 	
 	// Create Setter Method	
-		public void setName() {
-			System.out.print("Enter Name\t\t\t  : ");
-			this.name=scan.next()+scan.nextLine();
+		public void setModel() {
+			System.out.print("Enter Model\t\t\t  : ");
+			this.model=scan.next()+scan.nextLine();
 		}
 		
 		public void setPrice() {
@@ -40,8 +40,8 @@ public class Car {
 		
 		// Create Getter Method
 		
-		public String getName() {
-			return name;
+		public String getModel() {
+			return model;
 		}
 		
 		public double getPrice() {
