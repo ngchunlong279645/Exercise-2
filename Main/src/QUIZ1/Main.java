@@ -14,8 +14,8 @@ public class Main {
 		System.out.println("=========================");
 		System.out.println(">>>>CAR INFORMATION<<<<<");
 		System.out.println("=========================");
-		System.out.println("Name\t\t\t: "+Proton.getName());
-		System.out.println("Price\t\t\t: "+Proton.getPrice());
+		System.out.println("Name\t\t\t\t: "+Proton.getName());
+		System.out.println("Price\t\t\t\t: "+Proton.getPrice());
 		System.out.println("Number of seat\t\t\t: "+Proton.getNumberOfSeat());
 		System.out.println("Engine Type\t\t\t: "+Proton.getEngineType());
 		System.out.println("Quantity\t\t\t: "+Proton.getQuantity());

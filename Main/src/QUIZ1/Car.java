@@ -33,7 +33,7 @@ public class Car {
 		}
 		
 		public void setQuantity() {
-			System.out.print("Enter Quantity\t\t  : ");
+			System.out.print("Enter Quantity\t\t\t  : ");
 			this.quantity=scan.nextInt();
 		}
 		
