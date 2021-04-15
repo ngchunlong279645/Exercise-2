@@ -8,6 +8,8 @@ public class Car {
 	double price;
 	int numberOfSeat;
 	String engineType;
+	int quantity;
+	double totalPrice;
 	
 	// Create Setter Method	
 		public void setName() {
@@ -30,6 +32,12 @@ public class Car {
 			this.engineType=scan.next()+scan.nextLine();
 		}
 		
+		public void setQuantity() {
+			System.out.print("Enter Quantity\t\t  : ");
+			this.quantity=scan.nextInt();
+		}
+		
+		
 		// Create Getter Method
 		
 		public String getName() {
@@ -46,6 +54,15 @@ public class Car {
 		
 		public String getEngineType() {
 			return engineType;
+		}
+		
+		public int getQuantity() {
+			return quantity;
+		}
+		
+		public double getTotalPrice() {
+			totalPrice = this.price*this.quantity;
+			return totalPrice;
 		}
 		
 		
