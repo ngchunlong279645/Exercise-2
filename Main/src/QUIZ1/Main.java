@@ -15,7 +15,7 @@ public class Main {
 		
 		
 		System.out.println("=========================");
-		System.out.println(">>>>CAR INFORMATION<<<<<");
+		System.out.println(">>>>PROTON INFORMATION<<<<<");
 		System.out.println("=========================");
 		System.out.println("Model\t\t\t\t: "+Proton.getModel());
 		System.out.println("Price\t\t\t\t: "+Proton.getPrice());
@@ -30,8 +30,9 @@ public class Main {
 		BMW.setEngineType();
 		BMW.setQuantity();
 		
+		System.out.println("");
 		System.out.println("=========================");
-		System.out.println(">>>>CAR INFORMATION<<<<<");
+		System.out.println(">>>>BMW INFORMATION<<<<<");
 		System.out.println("=========================");
 		System.out.println("Model\t\t\t\t: "+BMW.getModel());
 		System.out.println("Price\t\t\t\t: "+BMW.getPrice());
