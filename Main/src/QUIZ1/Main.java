@@ -24,13 +24,13 @@ public class Main {
 		System.out.println("Quantity\t\t\t: "+Proton.getQuantity());
 		System.out.println("Total price\t\t\t: "+Proton.getTotalPrice());
 		
+		System.out.println("");
 		BMW.setModel();
 		BMW.setPrice();
 		BMW.setNumberOfSeat();
 		BMW.setEngineType();
 		BMW.setQuantity();
-		
-		System.out.println("");
+				
 		System.out.println("=========================");
 		System.out.println(">>>>BMW INFORMATION<<<<<");
 		System.out.println("=========================");
