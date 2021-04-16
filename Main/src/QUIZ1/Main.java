@@ -12,8 +12,6 @@ public class Main {
 		Proton.setEngineType();
 		Proton.setQuantity();
 		
-		
-		
 		System.out.println("=========================");
 		System.out.println(">>>>PROTON INFORMATION<<<<<");
 		System.out.println("=========================");
