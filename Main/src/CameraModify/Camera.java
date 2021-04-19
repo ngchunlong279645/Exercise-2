@@ -1,16 +1,15 @@
-package CameraConstructor;
+package CameraModify;
 
 import java.util.Scanner;
 
 public class Camera {
 	Scanner scan = new Scanner(System.in);
-	String model,color,zoom;
-	double price,weight;
-	int minISO,maxISO;
-	char waterproof;
+	private String model,color,zoom;
+	private double price,weight;
+	private int minISO,maxISO;
+	private char waterproof;
+	private double total;
 	
-
-	//default construcctor
 	Camera(){
 		System.out.print("Enter model\t\t :");
 		this.model=scan.next()+scan.nextLine();
@@ -30,7 +29,6 @@ public class Camera {
 		this.waterproof=scan.next().charAt(0);
 	}
 	
-	//Parameterized constructor
 	Camera(String m,String c,double p,double w,String z,int min,int max,char wtr){
 		this.model=m;
 		this.color=c;
@@ -42,13 +40,40 @@ public class Camera {
 		this.waterproof=wtr;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-
+	public String getModel() {
+		return this.model;
 	}
+	
+	public String getColor() {
+		return this.color;
+	}
+	
+	public double getPrice() {
+		return this.price;
+	}
+	
+	public double getWeight() {
+		return this.weight;
+	}
+	
+	public String getZoom() {
+		return this.zoom;
+	}
+	
+	public int getMinISO() {
+		return this.minISO;
+	}
+	
+	public int getMaxISO() {
+		return this.maxISO;
+	}
+	
+	public char getWaterproof() {
+		return this.waterproof;
+	}
+	
+	public double totalPrice() {
+		this.total = this.price*5;
+		return this.total;
+	}
+}
