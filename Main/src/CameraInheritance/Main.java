@@ -12,6 +12,8 @@ public class Main {
 		System.out.println();
 		
 		Canon objCanon = new Canon();
+		objCanon.setMonth(6);
+		objCanon.setRate(2.5);
 		System.out.println("");
 		System.out.println(objCanon.toString());
 		System.out.printf("Total Price without interest\t\t: RM%.2f\n",objCanon.getTotalPrice());
