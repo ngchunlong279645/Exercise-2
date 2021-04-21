@@ -10,14 +10,10 @@ public class Canon extends Camera {
 	
 	public Canon() {
 		super();
-	}
-	
-	public void setMonth(int month) {
-		this.month=month;
-	}
-	
-	public void setRate(double rate) {
-		this.rate=rate;
+		System.out.print("Installment Period (months)\t\t: ");
+		month=scan.nextInt();
+		System.out.print("The Interest Rate (%)\t\t\t: ");
+		rate=scan.nextDouble();
 	}
 	
 	public double getInterest(){
