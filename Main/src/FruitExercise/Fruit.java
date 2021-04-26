@@ -12,7 +12,7 @@ public class Fruit {
 		return name;
 	}
 	
-	public String toString() {
+	public String toString() { // overriding
 		return name+" is good for health";
 	}
 

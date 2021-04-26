@@ -4,7 +4,7 @@ public class testRun {
 
 	public static void main(String[] args) {
 		
-		Fruit objF = new Fruit(	"Fruit");
+		Fruit objF = new Fruit(	"Fruit");		
 		System.out.println(objF);
 		System.out.println();
 		

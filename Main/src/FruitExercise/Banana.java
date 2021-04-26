@@ -12,7 +12,7 @@ public class Banana extends Fruit {
 		return weight*89/100;
 	}
 	
-	public String toString() {
+	public String toString() {  
 		
 		return  super.toString()+"\n"+
 				super.getName()+" weight(g) : "+weight+"\n"+
