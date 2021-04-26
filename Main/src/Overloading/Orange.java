@@ -12,7 +12,7 @@ public class Orange {
 	}
 	
 	public Orange(int q,int p) {		//constructor with argument
-		setInfo(q,p);
+		setInfo(q,p);	//call method
 	}
 	
 	public void setInfo(int q,int p) {		//overloading method with 2 parameter

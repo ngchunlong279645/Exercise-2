@@ -13,10 +13,10 @@ public class SmallOrange extends Orange {		//sub class
 		super(q,p);		//called method in superclass with passing parameter
 		size=s;
 		
-		setInfo(q,p,s);
+		setInfo(q,p,s);	//method for overloading
 	}
 	
-	public void setInfo(int q,int p,char s) {
+	public void setInfo(int q,int p,char s) {	//overloading method with 3 parameter
 		if(s=='s')
 			weight=70;
 		else if(s=='m')
