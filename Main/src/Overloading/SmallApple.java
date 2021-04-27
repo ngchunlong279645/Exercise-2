@@ -1,22 +1,22 @@
 package Overloading;
 
-public class SmallOrange extends Orange {		//sub class
+public class SmallApple extends Apple {		//sub class
 	private char size;
 	private int weight;
 
-	public SmallOrange() {		//constructor for sub class
+	public SmallApple() {		//constructor for sub class
 		super();				//inherit data,method from super class (constructor with no argument)
 		size= ' ';
 	}
 	
-	public SmallOrange(int q,int p,char s) {		//constructor sub class with argumnet
-		super(q,p);		//called method in superclass with passing parameter
+	public SmallApple(String name,int q,int p,char s) {		//constructor sub class with argument
+		super(name,q,p);		//called method in superclass with passing parameter
 		size=s;
 		
-		setInfo(q,p,s);	//method for overloading
+		setInfo(name,q,p,s);	//method for overloading
 	}
 	
-	public void setInfo(int q,int p,char s) {	//overloading method with 3 parameter
+	public void setInfo(String name,int q,int p,char s) {	//overloading method with 3 parameter
 		if(s=='s')
 			weight=70;
 		else if(s=='m')
@@ -38,7 +38,8 @@ public class SmallOrange extends Orange {		//sub class
 	}
 	
 	public String toString() {		//overriding method
-		return "Quantity\t: "+quantity+"\n"+
+		return "Type\t\t: "+name+"\n"+
+				"Quantity\t: "+quantity+"\n"+
 				"Unit Price\t: RM "+price+"\n"+
 				"Size\t\t: "+size+"\n"+
 				"Weight\t\t: "+weight+"\n"+

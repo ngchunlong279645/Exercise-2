@@ -1,60 +1,41 @@
 package Overloading;
 
-public class Orange {
-	protected int quantity;
-	protected double price;
+public class Orange extends Fruit {
+	protected int vitA;
+	protected int vitB;
 	
-	
-	
-	public Orange() {		//constructor with no argument
-		quantity=0;
-		price=0;
+	public Orange(String name,int a,int b) {
+		super(name);
+		setInfo(name,a,b);
 	}
 	
-	public Orange(int q,int p) {		//constructor with argument
-		setInfo(q,p);	//call method
+	public void setInfo(String name,int a,int b) {
+		if(a>0)
+			vitA=a;
+		else
+			vitA=0;
+		if(b>0)
+			vitB=b;
+		else
+			vitB=0;
 	}
 	
-	public void setInfo(int q,int p) {		//overloading method with 2 parameter
-		if(q>0) 
-			quantity=q;
-		else 
-			quantity=0;
-
-		if(p>0) 
-			price=p;
-		else 
-			price=0;
+	public int getVitA() {
+		return vitA;
 	}
 	
-	public int getQuantity() {
-		return quantity;
+	public int getVitB() {
+		return vitB;
 	}
 	
-	public double getPrice() {
-		return price;
+	public int totalVit() {
+		return vitA+vitB;
 	}
-	
-	public double totalPrice() {
-		return quantity*price;
-	}
-	
-	public double getDiscount() {
-		return totalPrice()*0.1;
-	}
-	
-	public double totalPayment() {
-		return totalPrice()-getDiscount();
-	}
-	
 	
 	public String toString() {		//overriding method
-		return "Quantity\t: "+quantity+"\n"+
-				"Unit Price\t: RM "+price+"\n"+
-				"Total Price\t: RM "+totalPrice()+"\n"+
-				"Discount\t: RM "+getDiscount()+"\n"+
-				"Total Payment\t: RM "+totalPayment()+"\n";
-				
+		return 	"Type\t\t: "+name+"\n"+
+				"Vitamin A\t: "+vitA+"\n"+
+				"Vitamin B\t: "+vitB+"\n"+
+				"Total Vitamin\t: "+totalVit()+"\n";
 	}
-
 }
