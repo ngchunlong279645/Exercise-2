@@ -4,6 +4,7 @@ public class RedApple extends Apple {
 	
 	private String color;
 	private String country;
+	private char size;
 	
 	public RedApple(String name, double p,int q, String color, String country ) {
 		super(name, p, q);
@@ -18,6 +19,10 @@ public class RedApple extends Apple {
 	
 	public String getCountry() {
 		return this.country;
+	}
+	
+	public char getSize() {
+		return size='M';
 	}
 
 	public String toString() {

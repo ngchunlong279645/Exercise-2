@@ -13,6 +13,7 @@ public class Orange extends Fruit {
 			unitPrice();
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Country\t\t: "+country);
+			System.out.println("Total Tax\t: 0%");
 			System.out.println("Unit Price\t: RM "+unitPrice());
 		}
 		else if(country.equals("USA")) {
@@ -20,6 +21,7 @@ public class Orange extends Fruit {
 			unitPrice(tax);
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Country\t\t: "+country);
+			System.out.println("Total Tax\t: "+tax*100+"%");
 			System.out.println("Unit Price\t: RM "+unitPrice(tax));
 		}
 		
@@ -29,6 +31,7 @@ public class Orange extends Fruit {
 			unitPrice(importTax,serviceTax);
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Country\t\t: "+country);
+			System.out.println("Total Tax\t: "+(importTax+serviceTax)*100+"%");
 			System.out.println("Unit Price\t: RM "+unitPrice(importTax,serviceTax));
 		}
 	}
@@ -44,4 +47,6 @@ public class Orange extends Fruit {
 	public double unitPrice(double importTax,double serviceTax) {
 		return price*(1+importTax+serviceTax);
 	}
+	
+	
 }

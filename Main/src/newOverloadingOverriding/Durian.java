@@ -15,12 +15,12 @@ public class Durian extends Fruit {
 			System.out.println("Total Weight\t: "+totalWeight()+" kg");
 		}
 		else {
-			double husk=2;
-			totalWeight(husk);
+			double huskWeight=2;
+			totalWeight(huskWeight);
 			System.out.println("Type\t\t: "+name);
 			System.out.println("Weight\t\t: "+weight+" kg");
-			System.out.println("Husk\t\t: "+husk+" kg");
-			System.out.println("Total Weight\t: "+totalWeight(husk)+" kg");
+			System.out.println("Husk\t\t: "+huskWeight+" kg");
+			System.out.println("Total Weight\t: "+totalWeight(huskWeight)+" kg");
 		}
 	}
 		
@@ -28,7 +28,7 @@ public class Durian extends Fruit {
 		return weight;
 	}
 	
-	public double totalWeight(double husk) {
-		return weight+husk;
+	public double totalWeight(double huskWeight) {
+		return weight+huskWeight;
 	}
 }

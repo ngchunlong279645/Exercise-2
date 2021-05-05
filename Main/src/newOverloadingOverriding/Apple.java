@@ -3,6 +3,7 @@ package newOverloadingOverriding;
 public class Apple extends Fruit {
 	private double price;
 	private int quantity;
+	private char size;
 	
 	public Apple(String name,double p,int q) {
 		super(name);
@@ -47,6 +48,10 @@ public class Apple extends Fruit {
 	
 	public double totalPrice(double newPrice,double discount) {
 		return (newPrice*quantity)*(1-discount);
+	}
+	
+	public char getSize() {
+		return size ='L';
 	}
 	
 	public String toString() {
